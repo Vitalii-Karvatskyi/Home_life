@@ -1,0 +1,108 @@
+@media screen and (max-width: 1399px) {
+
+}
+@media screen and (max-width: 1199px) {
+    .about img {
+        max-width: 30%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .burger {
+        display: block;
+        z-index: 5;
+    }
+    .header .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(15, 15, 15, 0.85);
+        color: #FFF;
+    }
+    .header .nav {
+        min-width: calc(100% - 120px);
+        justify-content: flex-end;
+        margin-bottom: 15px;
+    }
+    .header .container {
+        flex-wrap: wrap;
+    }
+    .header .burger.open + .menu {
+        display: flex;
+    }
+    .header .menu_link {
+        font-size: 1.5rem;
+    }
+    .advantages, .services, .about {
+        padding: 75px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .about img {
+        display: none;
+    }
+    .about .content {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+    .section-title {
+        margin-bottom: 45px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .section-title {
+        font-size: 24px;
+    }
+    .slick-dots {
+        justify-content: flex-start;
+    }
+    .advantages .item {
+        padding-left: 0;
+    }
+    .advantages .item::before {
+        display: none;
+    }
+    .footer .wrapper {
+        flex-direction: column;
+    }
+    .upperline, .scroll {
+        margin-top: 20px;
+    }
+    .advantages .item + .item {
+        margin-top: 30px;
+    }
+    .advantages .title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .btn {
+        min-width: initial;
+    }
+    .advantages, .services, .about {
+        padding: 50px 0;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    .upperline::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 140px;
+        width: 75px;
+        height: 2px;
+        background-color: var(--color-yellow);
+    }
